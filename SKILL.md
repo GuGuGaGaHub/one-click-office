@@ -1,7 +1,4 @@
 ---
-name: one-click-office
-description: 一键办公（开源）总控技能。当用户需要创建、编辑、分析或交付与办公软件相关的任务（PowerPoint 幻灯片、Excel 表格/CSV、Word 文档/飞书文档、PDF 等）时使用。本技能不直接修改办公软件文件，而是智能识别任务类型并调用对应的专业技能（ppt、sheet、lark-doc、doubao-pdf 等）执行；执行过程中插入简短进度话语向用户播报；对已执行过的步骤根据环境状态（产物是否存在、是否过期、内容是否匹配）决定是否重新执行。触发场景包括：制作 PPT、制作表格、处理 Excel、创建或编辑 Word 文档、整理数据表、制作汇报材料、处理 PDF 等。
----
 
 # 一键办公（One Click Office）· 开源
 
@@ -42,12 +39,12 @@ One Click Office 是一个面向 AI Agent 的**办公任务总控 / 路由 Skill
 
 所有实际文件操作必须委派给对应的专业 Skill。
 
-| 办公软件域 | 调用技能 | 首要要求 |
-|---|---|---|
-| Word / 文档 | `lark-doc` | 首步读取 `lark-doc/SKILL.md` |
-| Excel / 表格 | `sheet` | 首步读取 `sheet/SKILL.md` |
-| PowerPoint | `ppt` | 每次新指令后重新读取 `ppt/SKILL.md` |
-| PDF | `doubao-pdf` | 首步读取 `doubao-pdf/SKILL.md` |
+| 办公软件域      | 调用技能         | 首要要求                       |
+| ---------- | ------------ | -------------------------- |
+| Word / 文档  | `lark-doc`   | 首步读取 `lark-doc/SKILL.md`   |
+| Excel / 表格 | `sheet`      | 首步读取 `sheet/SKILL.md`      |
+| PowerPoint | `ppt`        | 每次新指令后重新读取 `ppt/SKILL.md`  |
+| PDF        | `doubao-pdf` | 首步读取 `doubao-pdf/SKILL.md` |
 
 详细触发条件和执行要求见：
 
